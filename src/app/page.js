@@ -5,9 +5,10 @@ import Sold from "./components/Sold";
 import Services from "./components/Services";
 import About from "./components/About";
 import Why from "./components/Why";
-import Testimoniela from "./components/Testimoniela";
-import Cta from "./components/Cta";
+import Testimonial from "./components/Testimonial";
+import Contact from "./components/Contact";
 import BackToTopBtn from "./components/BackToTopBtn";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -16,13 +17,13 @@ export default function Home() {
         <Hero/>
         <Offer/>
         <About/>
-        <Sold/>
-        <Services/>
         <Why/>
-        <Testimoniela/>
-        <Cta/>
+        <Services/>
+        <Sold/>
+        <Testimonial/>
+        <Contact/>
+        <Footer/>
         <BackToTopBtn/>
-        <div className="h-[4000px]"></div>
     </main>
   );
 }

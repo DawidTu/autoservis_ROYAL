@@ -167,7 +167,7 @@ export default function CarSlider() {
                     <h3 className='text-lg uppercase font-bold'>
                       {car.name}
                     </h3>
-                    <h3 className='mb-10 text-accent font-semibold uppercase'>
+                    <h3 className='mb-8 text-accent font-semibold uppercase'>
                       {car.price}
                     </h3>
                   </div>
@@ -176,8 +176,7 @@ export default function CarSlider() {
                     <FaStar/>
                     <FaStar/>
                     <FaStar/>
-                    <FaStar/>
-                    <FaStar/>
+                    <FaStarHalfAlt/>
                   </div>
                 </div>
                 {/* car info */}

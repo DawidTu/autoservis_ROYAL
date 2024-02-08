@@ -1,5 +1,11 @@
+import CarSlider from "./CarSlider";
+
 export default function Sold() {
   return (
-    <section id="sold" className="section flex items-center bg-purple-400">Sold</section>
+    <section id="offer" className="h-screen flex items-center">
+      <div className="container mx-auto">
+        <CarSlider/>
+      </div>
+    </section>
   )
 }

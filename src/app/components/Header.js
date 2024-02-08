@@ -101,7 +101,7 @@ export default function Header() {
           </Link>
           <Link
           className="cursor-pointer"
-          to="sold"
+          to="about"
           activeClass="active"
           smooth={desktopMode}
           spy={true}
@@ -119,7 +119,7 @@ export default function Header() {
           </Link>
           <Link
           className="cursor-pointer scale"
-          to="about"
+          to="sold"
           activeClass="active"
           smooth={desktopMode}
           spy={true}
