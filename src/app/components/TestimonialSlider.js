@@ -4,13 +4,14 @@
 import Image from "next/image";
 
 // motion
-import { motion, easeInOut } from "framer-motion";
+import { motion } from "framer-motion";
 
 // variants
 import { fadeIn } from "/variants";
 
 //import required moduls
 import { Pagination } from 'swiper/modules'
+
 // swiper
 import {Swiper, SwiperSlide} from 'swiper/react';
 
@@ -51,7 +52,7 @@ export default function TestimonialSlider() {
           dynamicBullets: true,
         }}
         modules={[Pagination]}
-        className="h-[450px] xl:h-[400px]"
+        className="h-[450px]"
       >
         {testimonialData.map((person, index) => {
           const { message, avatar, name, job } = person;

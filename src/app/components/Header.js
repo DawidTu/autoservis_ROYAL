@@ -8,7 +8,6 @@ import Image from 'next/image';
 import { Link } from "react-scroll";
 
 //components
-import SearchMobile from "./SearchMobile";
 import Socials from "./Socials";
 
 //icons
@@ -135,8 +134,11 @@ export default function Header() {
           >
               Kontakt
           </Link>
-          {/* search mobile */}
-          <SearchMobile/>
+          {/* socials */}
+          <Socials 
+            containerStyles='flex gap-x-2'
+            iconStyles='text-2xl hover:text-accent-hover duration-300'
+            />
         </nav>
       </div>
     </header>

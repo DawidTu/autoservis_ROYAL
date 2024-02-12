@@ -7,7 +7,7 @@ export default function Copyright() {
   return (
     <div className='flex flex-col justify-center border-t py-10 text-center text-sm md:text-base'>
         <div className="text-muted-foreground flex justify-center gap-x-8 pb-2">
-            <p>&copy; {getCurrentYear()} - Martin Čulen</p>
+            <p>&copy; {getCurrentYear()} - Autoservis ROYAL</p>
               <div className='border-b border border-muted-foreground rotate-180'></div>
               <p className='text-muted-foreground justify-center'>Website by <Link className='hover:text-primary-foreground duration-500' href="/">David Tuma</Link></p>
           </div>

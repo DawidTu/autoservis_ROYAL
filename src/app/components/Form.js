@@ -1,14 +1,14 @@
 'use client';
 
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
-import { User, MailIcon, ArrowRightIcon, MessageSquare, PhoneCallIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { User, MailIcon, MessageSquare, PhoneCallIcon } from "lucide-react";
 
 import emailjs from '@emailjs/browser'
 import { useState } from "react";
 
-const Form = () => {
+export default function Form() {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [number, setNumber] = useState("")
@@ -27,7 +27,7 @@ const Form = () => {
     
           setError('');
 
-          const serviceId = 'service_spl4qxu';
+          const serviceId = 'service_cx17pbi';
           const templateId = 'template_8qdmgg7';
           const userId = 'LHIIyucJAPuIWRX_B';
     
@@ -58,25 +58,24 @@ const Form = () => {
         onSubmit={sendEmail}
         className="flex flex-col gap-y-4">
         <div className="relative flex items-center">
-            <Input value={name} type='name' id='name' placeholder='Meno a Priezvisko *' onChange={(e) => setName(e.target.value)}/>
+            <Input className="outline-none bg-white h-full border rounded-lg pl-4 focus:border-accent" value={name} type='name' id='name' placeholder='Meno a Priezvisko *' onChange={(e) => setName(e.target.value)}/>
             <User className="absolute right-6" size={20}/>
         </div>
         <div className="relative flex items-center">
-            <Input value={email} type='email' id='email' placeholder='Email *' onChange={(e) => setEmail(e.target.value)}/>
+            <Input className="outline-none bg-white h-full border rounded-lg pl-4 focus:border-accent" value={email} type='email' id='email' placeholder='Email *' onChange={(e) => setEmail(e.target.value)}/>
             <MailIcon className="absolute right-6" size={20}/>
         </div>
         <div className="relative flex items-center">
-            <Input value={number} type='number' id='number' placeholder='+421 *' onChange={(e) => setNumber(e.target.value)}/>
+            <Input className="outline-none bg-white h-full border rounded-lg pl-4 focus:border-accent" value={number} type='number' id='number' placeholder='+421 *' onChange={(e) => setNumber(e.target.value)}/>
             <PhoneCallIcon className="absolute right-6" size={20}/>
         </div>
         <div className="relative flex items-center">
-            <Textarea value={message} placeholder="Tu nápíšte prosím svoju správu. *"  onChange={(e) => setMessage(e.target.value)}/>
+            <Textarea className="outline-none bg-white h-full border rounded-lg pl-4 focus:border-accent" value={message} placeholder="Tu nápíšte prosím svoju správu. *"  onChange={(e) => setMessage(e.target.value)}/>
             <MessageSquare className="absolute top-4 right-6" size={20}/>
         </div>
         <div className="flex items-center gap-x-8">
-            <Button type="submit" className='flex items-center gap-x-1 max-w-[166px] text-sm font-light text-primary capitalize hover:text-white border-primary'>
-                Kontaktujte ma
-                <ArrowRightIcon size={20} />
+            <Button type="submit" className='hidden xl:block bg-accent hover:bg-accent-hover rounded-[10px] w-full h-16 uppercase font-medium text-white tracking-[2px] text-[13px] max-w-[184px]'>
+                Kontaktujte nás
             </Button>
             <div>     
                 {error && <div className="danger">{error}</div>}
@@ -86,5 +85,3 @@ const Form = () => {
     </form>
   )
 }
-
-export default Form;
