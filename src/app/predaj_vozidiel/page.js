@@ -1,7 +1,12 @@
 import React from 'react'
+import Header from "../components/Header"
+
 
 export default function Sale() {
   return (
-    <div className='text-accent'>Predaj</div>
+    <>
+      <Header/>
+      <div className='text-accent'>Import</div>
+    </>
   )
 }

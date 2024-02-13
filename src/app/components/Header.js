@@ -137,7 +137,7 @@ export default function Header() {
           {/* socials */}
           <Socials 
             containerStyles='flex gap-x-2'
-            iconStyles='text-2xl hover:text-accent-hover duration-300'
+            iconStyles='text-2xl hover:bg-accent hover:text-white duration-300 border border-accent p-1 rounded-md'
             />
         </nav>
       </div>

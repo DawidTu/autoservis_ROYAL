@@ -1,7 +1,12 @@
 import React from 'react'
+import Header from "../components/Header"
+
 
 export default function Zaruka() {
   return (
-    <div className='text-accent'>Zaruka</div>
+    <>
+      <Header/>
+      <div className='text-accent'>Import</div>
+    </>
   )
 }

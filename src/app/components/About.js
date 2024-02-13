@@ -22,6 +22,10 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "/variants";
 
+//Link
+import Link from "next/link";
+
+import Worker from "./Worker";
 export default function About() {
   const [ref, inView] = useInView({
     threshold: 0.5,
@@ -117,10 +121,18 @@ export default function About() {
                   initial='hidden'
                   whileInView={'show'}
                   viewport={{ once: false, amount: 0.6 }} 
-                  className="hidden xl:block bg-accent hover:bg-accent-hover rounded-[10px] w-full h-16 uppercase font-medium text-white tracking-[2px] text-[13px] max-w-[184px]">Prejsť na všetky autá</motion.button>
+                  className="hidden xl:block bg-accent hover:bg-accent-hover rounded-[10px] w-full h-16 uppercase font-medium text-white tracking-[2px] text-[13px] max-w-[184px]"
+                >
+                  <Link href="vsetky_vozidla">
+                    Prejsť na všetky autá
+                  </Link>
+                </motion.button>
             </div>
           </div>
         </div>
+          <div>
+            <Worker/>
+          </div>
       </div>
     </section>
   )

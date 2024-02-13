@@ -11,7 +11,7 @@ import { fadeIn } from "/variants";
 
 export default function Brands() {
   return (
-    <section className="xl:pt-16 xl:h-[200px] bg-white flex flex-col justify-center">
+    <section className="fixed top-[570px] max-w-[1024px] xl:h-[100px] flex flex-col justify-center">
       <motion.div 
         variants={fadeIn('up', 0.4)}
         initial='hidden'
