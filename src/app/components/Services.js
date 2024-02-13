@@ -59,7 +59,12 @@ export default function Services() {
               viewport={{ once: false, amount: 0.6 }} 
               className="h3 md:h2 text-black">Naše služby<span className="text-accent">.</span></motion.h3>
           </motion.div>
-          <div className="items-center grid grid-cols-2 xl:grid-cols-3 gap-8">
+          <motion.div
+            variants={fadeIn('up', 0.6)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.6 }} 
+            className="items-center grid grid-cols-2 xl:grid-cols-3 gap-6">
             {Data.map((item, index) => {
               return (
                 <div className="mt-10 text-center hover:border hover:border-accent" key={index}>
@@ -81,7 +86,7 @@ export default function Services() {
                 </div>
               )
             })}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
