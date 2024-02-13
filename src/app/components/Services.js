@@ -17,32 +17,32 @@ const Data = [
   {
     image: '/icons/services/PREDAJ.png',
     name: 'Predaj vozidiel',
-    link: '/',
+    link: 'predaj_vozidiel',
   },
   {
     image: '/icons/services/DOVOZ.png',
     name: 'Dovoz vozidiel',
-    link: '/',
+    link: 'dovoz_vozidiel',
   },
   {
     image: '/icons/services/FINANCOVANIE.png',
     name: 'Financovanie vozidiel',
-    link: '/',
+    link: 'financovanie',
   },
   {
     image: '/icons/services/POISTENIE.png',
     name: 'Poistenie vozidiel',
-    link: '/',
+    link: 'poistenie',
   },
   {
     image: '/icons/services/VYKUP.png',
     name: 'Výkup vozidiel',
-    link: '/',
+    link: 'vykup_vozidiel',
   },
   {
     image: '/icons/services/ZARUKA.png',
     name: 'Záruka na vozidlo',
-    link: '/',
+    link: 'zaruka',
   },
 ]
 
